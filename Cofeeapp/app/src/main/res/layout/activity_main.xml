@@ -1,0 +1,101 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context="MainActivity">
+
+        <EditText
+            android:id="@+id/Edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="TOPPINGS" />
+
+        <CheckBox
+            android:id="@+id/cream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whipped cream Rs = 20/-" />
+
+        <CheckBox
+            android:id="@+id/cofee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="chocolate Rs = 10/-" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="QUANTITY" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/increament"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/addorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    0     "
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Decrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="-" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Order Summary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="0.00"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Order" />
+
+    </LinearLayout>
+
+
+</ScrollView>

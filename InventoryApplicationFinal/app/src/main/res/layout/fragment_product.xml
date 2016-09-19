@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".Fragments.Product">
+
+
+    <ListView
+        android:id="@+id/product_list"
+        android:background="#56da6f"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_menu_add"
+        android:src="@android:drawable/ic_menu_add"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="40dp"
+        />
+
+</RelativeLayout>
