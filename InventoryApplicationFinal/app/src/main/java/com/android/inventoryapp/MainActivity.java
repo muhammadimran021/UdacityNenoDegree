@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         mFragmentArrayList = new ArrayList<>();
         mFragmentArrayList.add(mProduct);
         mFragmentArrayList.add(mDetailLayout);
-        mTabLayout.addTab(mTabLayout.newTab().setText("Products"),R.mipmap.ic_launcher);
+        mTabLayout.addTab(mTabLayout.newTab().setText("Products"));
         mTabLayout.addTab(mTabLayout.newTab().setText("Sales Detail"));
         adapter = new FragAdapter(getSupportFragmentManager(),mFragmentArrayList);
         mViewPager.setAdapter(adapter);
